@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet">
+    <title>HTML & CSS Reference</title>
+</head>
+
+<!-- formatting changes to make: add <section> tags to enclose each table-->
+<!-- add the class="code" attribute to self closing denotations? might make formatting look better-->
+
+<body>
+
+    <header>
+        <h1>HTML & CSS Reference Tables</h1>
+        
+        <nav>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6">Navigation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#html-basic">Basic HTML</a></td>
+                        <td><a href="#html-table">HTML Tables</a></td>
+                        <td><a href="#html-semantic">Semantic HTML</a></td>
+                        <td><a href="#css-basic">Basic CSS</a></td>
+                        <td><a href="#css-box">CSS Box Model</a></td>
+                        <td><a href="#css-display">CSS Display Model</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan ="6"><h6>Compiled and constructed by Jesse Heald Oct. 2022. For source information <a href="#sources">see here</a></h6></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <p>This webpage contains a fraction of the available HTML elements. There are many I have omitted that I have not learned how to use yet or simply forgot to include. What I have included here I learned about mostly from <a href="https://codecademy.com/learn" target="_blank">Codecademy</a> or by browsing the <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a> website.</p>
+        </section>
+
+
+        <!-- elements to add: <ol> and <ul> followed by <li> -->
+
+        <table id="html-basic">
+            <thead>
+                <tr>
+                    <th colspan="5"><h2>Basic HTML Tags</h2></th>
+                </tr>
+                <tr>
+                    <td colspan="5">These are some of the basic HTML elements and tags that are used to make up the majority of a webpage. Follow the links for more in-depth information and examples.</td>
+                </tr>
+                <tr>
+                    <th><h3>HTML Opening Tag</h3></th>
+                    <th><h3>Closing Tag (if applicable)</h3></th>
+                    <th><h3>Name</h3></th>
+                    <th><h3>Description & Use</h3></th>
+                    <th><h3>Further Reading</h3></th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="code">&lt;!DOCTYPE html&gt;</td>
+                <td>self closing</td>
+                <td>Doctype Declaration</td>
+                <td>Tells the browser that the document being viewed is an HTML document. Every HTML document must include this on line 1.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;html&gt;</td>
+                <td class="code">&lt;/html&gt;</td>
+                <td>HTML</td>
+                <td>Encloses the entirety of the HTML document excluding only the Doctype declaration.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;head&gt;</td>
+                <td class="code">&lt;/head&gt;</td>
+                <td>Head</td>
+                <td>Contains metadata such as the title of the page and links for connecting CSS styling or fonts. Information in this section of the page will not be displayed on the page.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;body&gt;</td>
+                <td class="code">&lt;/body&gt;</td>
+                <td>Body</td>
+                <td>Contains the parts of the page that are to be displayed within the browser. Usually divided up into sections such as header, main, footer, etc. See Semantic HTML section for more information.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;h1&gt;</td>
+                <td class="code">&lt;/h1&gt;</td>
+                <td>Header</td>
+                <td>Used to add header-level text to a page. Has multiple levels ranging from largest (h1) to smallest (h6).</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;p&gt;</td>
+                <td class="code">&lt;/p&gt;</td>
+                <td>Paragraph</td>
+                <td>Used to add paragraphs of text to a page.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;!--</td>
+                <td class="code">--&gt;</td>
+                <td>Comment</td>
+                <td>Use this important element to add comments to HTML code so that anyone reveiwing the code can understand what it is trying to accomplish. Comments can enclose HTML code to prevent that code from being run</td>
+                <td><a href="https://www.w3schools.com/html/html_comments.asp" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;img&gt;</td>
+                <td>self closing</td>
+                <td>Image</td>
+                <td>Used to add images to a page. Can be used to embed external images from another page or internal images from the website's files</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;video&gt;</td>
+                <td class="code">&lt;/video&gt;</td>
+                <td>Video</td>
+                <td>Adds a video to a page. Be sure to include the controls attribute to be user friendly.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;audio&gt;</td>
+                <td class="code">&lt;/audio&gt;</td>
+                <td>Audio</td>
+                <td>Adds an audio element (music, speech, or other) to the page. Be sure to include the controls attribute to be user friendly.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;a&gt;</td>
+                <td class="code">&lt;/a&gt;</td>
+                <td>Anchor</td>
+                <td>Used to add links to other pages, files, or even email addresses. Can also link within the page it is used on.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;br&gt;</td>
+                <td>self closing</td>
+                <td>Line Break</td>
+                <td>Adds extra blank lines in bewteen elements. Usually it is better to adjust spacing with CSS properties.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;em&gt;</td>
+                <td class="code">&lt;/em&gt;</td>
+                <td>Emphasis</td>
+                <td>Used to signify emphasis on a section of text.</td>
+                <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Further Reading and Examples</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table id="html-table">
+            <thead>
+                <tr>
+                    <th colspan="5"><h2>HTML Tables</h2></th>
+                </tr>
+                <tr>
+                    <th><h3>HTML Opening Tag</h3></th>
+                    <th><h3>Closing Tag (if applicable)</h3></th>
+                    <th><h3>Name</h3></th>
+                    <th><h3>Description & Use</h3></th>
+                    <th><h3>Further Reading</h3></th>
+                </tr>
+                <tr>
+                    <td colspan="5">These elements are used to contruct HTML Tables. These are powerful formatting tools and can be used to build entire pages such as this one.</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;table&gt;</td>
+                    <td class="code">&lt;/table&gt;</td>
+                    <td>Table</td>
+                    <td>Encloses the entire table including the head, foot and body.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;thead&gt;</td>
+                    <td class="code">&lt;/thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>This element is used to make the header of a table, usually seen as names or descriptions of the rows or columns.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;tbody&gt;</td>
+                    <td class="code">&lt;/tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>Used to enclose the main data rows of the table.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;tfoot&gt;</td>
+                    <td class="code">&lt;/tfoot&gt;</td>
+                    <td>Table Foot</td>
+                    <td>This element encloses the footer of the table which is usually used for summary info or citations.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;tr&gt;</td>
+                    <td class="code">&lt;/tr&gt;</td>
+                    <td>Table Row</td>
+                    <td>This element adds a new row to a table.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;th&gt;</td>
+                    <td class="code">&lt;/th&gt;</td>
+                    <td>Table Header</td>
+                    <td>This element is used to denote a cell as a header of a group of cells</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;td&gt;</td>
+                    <td class="code">&lt;/td&gt;</td>
+                    <td>Table Data Cell</td>
+                    <td>This element adds the individual cells within a Table Row.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <!-- elements to add: <nav> -->
+
+        <table id="html-semantic">
+            <thead>
+                <tr>
+                    <th colspan="5"><h2>Semantic HTML Tags</h2></th>
+                </tr>
+                <tr>
+                    <th><h3>HTML Opening Tag</h3></th>
+                    <th><h3>Closing Tag (if applicable)</h3></th>
+                    <th><h3>Name</h3></th>
+                    <th><h3>Description & Use</h3></th>
+                    <th><h3>Further Reading</h3></th>
+                </tr>
+                <tr>
+                    <td colspan="5">These tags are used to make your HTML code easier to read and understand. Combine these tags with good comments and formatting to make your code simple to read.</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="code">&lt;section&gt;</td>
+                    <td  class="code">&lt;/section&gt;</td>
+                    <td>Section</td>
+                    <td>Denotes a section within the webpage. Should always include a heading.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;article&gt;</td>
+                    <td class="code">&lt;/article&gt;</td>
+                    <td>This tag is meant to denote an article such as a forum post or newspaper article Additional tags may be used within this one to format the article</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;aside&gt;</td>
+                    <td class="code">&lt;/aside&gt;</td>
+                    <td>Used to enclose a portion of the page that is indirectly related to the main content.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+                <tr>
+                    <td class="code">&lt;address&gt;</td>
+                    <td class="code">&lt;/address&gt;</td>
+                    <td>Used to describe the section of a page that includes addresses or other forms of contact information.</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">Further Reading and Examples</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- elements to add; color, background-color, font-family, font-size-->
+
+        <table id="css-basic"></table>
+
+        <!-- elements to add; margin, border, padding-->
+
+        <table id="css-box"></table>
+
+        <!-- elements to add; position, height, width, display, z-index-->
+
+        <table id="css-display"></table>
+
+    </main>
+
+    <footer id="sources">
+        <h4>Main Sources</h4>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a></li>
+            <li><a href="https://www.codecademy.com/learn" target="_blank">Codecademy</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(52, 42, 33);
+    color: rgb(241, 233, 218);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*add header selector and affix it to the top section of the screen. adjust size and margins */
+
+table {
+    width: 90%;
+    margin: 80px 5%;
+    padding: 20px;
+}
+
+/*adjust formatting of paragraphs*/
+
+th {
+    background-color:hrgb(137, 26, 51);
+    border: 4px solid rgb(114, 134, 160);
+}
+
+tr {
+    text-align: center;
+    padding: 5px;
+    margin:10px;
+}
+    
+td {
+    text-align: justify;
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid rgb(114, 134, 160); 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(155, 107, 53);
+    font-weight: 700;
+}
+
+/*make the anchor elements a bit more interactive using an a:hover selector try to make the navbar links button-like?*/
+
+.code {
+    font-family: monospace;
+    background-color: rgb(99, 163, 117);
+}
